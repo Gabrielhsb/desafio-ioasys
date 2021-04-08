@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+
 import logo from './assets/Logo.png';
 import "./Login.css";
 import { useDispatch } from 'react-redux';
 import { authLogin } from '../../store/fetchActions';
-
+import React, { useState, useEffect } from 'react';
 
 const Login = () => {
     const [form, setForm] = useState({ email: '', password: '' });
@@ -12,15 +12,21 @@ const Login = () => {
         const { name, value } = e.target
 
         setForm({ ...form, [name]: value })
-    }
+    };
 
     function submitForm(e){
         e.preventDefault();
         setForm({email:'', password:''});
         dispatch(authLogin(form));
-    }
+    };
+
+    useEffect(() => {
+        document.body.className = 'login-body';
+    }, []);
+
     return (
-        <div className="login">
+      
+            <div className="login_div">
             <form 
             onSubmit={submitForm}
             className="login_form">
@@ -33,7 +39,10 @@ const Login = () => {
                 <button type="submit" className="submit_btn">Entrar</button>
             </form>
         </div>
+       
     );
+
+
 }
 
 

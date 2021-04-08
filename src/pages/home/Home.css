@@ -1,0 +1,9 @@
+body {
+
+    background-image: url("./assets/Background-image.png");
+    height: 900px;
+    background-position:top;
+    background-repeat: no-repeat;
+    background-size:cover;
+    outline: none;
+}

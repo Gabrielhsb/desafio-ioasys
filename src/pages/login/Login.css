@@ -83,13 +83,15 @@
     top: 292px;
 
 }
-body {
+.login-body {
+
 
     background-image: url("./assets/Background-image.png");
+    height: 900px;
+    background-position:top;
     background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-
+    background-size:cover;
+    outline: none;
 }
 
 .submit_btn {
