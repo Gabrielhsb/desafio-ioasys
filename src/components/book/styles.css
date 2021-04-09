@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200&family=Roboto:wght@100;400&display=swap');
+
+.page-card {
+    position: absolute;
+    width: 769px;
+    height: 608px;
+    left: 600px;
+    top: 140px;
+    
+    background: #FFFFFF;
+    box-shadow: 0px 16px 80px rgba(0, 0, 0, 0.32);
+    border-radius: 4px;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 6px 0px rgba(84, 16, 95, 0.13);
+}
+.page-card-image {
+    
+    display: flex;
+   
+}
+.page-card-image > img{
+   
+    position: absolute;
+    width: 349px;
+    height: 512.29px;
+    left: 59px;
+    top: 50px;
+}
+.page-card-body {
+    margin: 1px;
+    position: absolute;
+    left: 450px;
+    top: 59px;
+
+}
+.page-card-body > h1 {
+    font-family: Heebo, bold;
+    margin-bottom: 5px;
+    line-height: 20px;
+}
+
+
+.card-autor {
+    margin-top: 0.4px;
+    font-family: Heebo, bold;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    margin-top: 0px;
+    line-height: 19px;
+    margin-bottom: 0px;
+    color: #AB2680;
+}
+
+.card-autors {
+    margin-bottom: px;
+}
+
+.page-card-body > p {
+    line-height: 15px;
+}
+.card-page  {
+    
+width: 104px;
+font-family: Heebo;
+font-style: normal;
+font-weight: normal;
+font-size: 10px;
+line-height: 20px;
+margin-bottom: 0.02px;
+
+color: #999999;
+}
+
+.card-editor  {
+    
+    width: 104px;
+    
+    
+    font-family: Heebo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 20px;
+    margin-top: 0.02px;
+    margin-bottom: 0px;
+    color: #999999;
+    }
+
+
+.card-date  {
+
+    width: 104px;
+    
+    
+    font-family: Heebo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 20px;
+    margin-top: 0.02px;
+    
+    color: #999999;
+    }

@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Heebo');
 
+
+
+
+
 .login_form > h1 {
     position: absolute;
     width: 77px;
@@ -27,6 +31,7 @@
     
     background: rgba(0, 0, 0, 0.219);   
     border-radius: 4px;
+
 }
 
 .email-label {
@@ -82,16 +87,17 @@
     left: 120px;
     top: 292px;
 
+
 }
 .login-body {
-
-
     background-image: url("./assets/Background-image.png");
     height: 900px;
     background-position:top;
     background-repeat: no-repeat;
     background-size:cover;
     outline: none;
+
+
 }
 
 .submit_btn {
@@ -116,3 +122,41 @@
 
     color: #B22E6F;
 }
+
+.login_form > h1 {
+    left: 250px;
+    top: 290px;
+    font-size: 35px;
+}
+
+
+@media screen and (max-width: 480px)  {
+    .email {
+        width: 340px;
+        left: 15px;
+    }
+    .email-label {
+        left: 25px;
+    }
+    .password {
+        width: 340px;
+        left: 15px;
+    }
+    .password-label {
+        left: 25px;
+    }
+    .login_form > img{
+        left: 15px;
+        width: 130px;
+    }
+    .submit_btn {
+        left: 260px;
+        top: 442px;        
+    }
+    .login_form > h1 {
+        left: 170px;
+        top: 296px;
+        font-size: 40px;
+    }
+
+ }

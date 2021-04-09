@@ -7,6 +7,9 @@ import Header from '../../components/header/index';
 import { getAllBooks } from '../../store/fetchActions';
 import Pagination from "../../components/pagination";
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+
 export default function Home() {
 
 	const books = useSelector((state) => state.books);
@@ -24,7 +27,6 @@ export default function Home() {
 
 	useEffect(() => {
 		dispatch(getAllBooks(localStorage.getItem("token")));
-		setLoading(false);
 	}, [dispatch]);
 	
 	let user=  {
@@ -39,8 +41,9 @@ export default function Home() {
 				<div class="row" >
 				<div className="container">
 						<div class="row">
-							{currentBook.map((book, index) => <div class="col-3 mb-3 "><Card key={index} book={book} loading={loadin} /></div>)}
-							<Pagination booksPerPage={booksPerPage} totalBooks={books.length} paginate={paginate}/>
+					
+							 {currentBook.map((book, index) => <div class="col-3 mb-3 "><Card key={index} book={book} loading={loadin} /></div>)}
+							<Pagination booksPerPage={booksPerPage} totalBooks={books.length} paginate={paginate}/> 
 						</div>
 				</div>
 				</div>
