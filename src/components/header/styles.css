@@ -1,0 +1,53 @@
+.titulo > img {
+    position: absolute;
+    left: 8.42%;
+    right: 83.94%;
+    top: 5.47%;
+    bottom: 89.84%;
+}
+
+.titulo > h1 {
+    position: absolute;
+    width: 77px;
+    height: 40px;
+    left: 280px;
+    top: 48px;
+
+    font-family: Heebo;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 40px;
+    /* identical to box height, or 143% */
+
+    color: #333333;
+}
+
+.user > p {
+    position: absolute;
+    text-align: right;
+    width: 121px;
+    left: 83%;
+    right: 6.52%;
+    top: 7%;
+    font-family: Heebo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+
+    color: #333333;
+}
+
+.user > button {
+    position: absolute;
+    left: 91.14%;
+    right: 6.52%;
+    top: 5.73%;
+    bottom: 90.1%;
+
+    border: 1px solid rgba(51, 51, 51, 0.2);
+    box-sizing: border-box;
+}
+
+

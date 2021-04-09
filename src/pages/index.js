@@ -7,7 +7,7 @@ import Home from './home/Home';
 
 function PrivateRoute({ component: Component, ...rest }) {
 	const { isAuthenticated } = useSelector((state) => state.auth);
-
+	
 	return (
 		<Route
 			{...rest}

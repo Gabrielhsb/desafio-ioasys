@@ -7,3 +7,16 @@ body {
     background-size:cover;
     outline: none;
 }
+
+
+.space {
+    border: 30px;
+}
+
+.rspace {
+    margin-top: 200px;
+}
+
+.container { 
+    padding: 0px;
+  }
