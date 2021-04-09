@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200&family=Roboto:wght@100;400&display=swap');
+
+
+.pagination > li > a {
+    color:black;
+
+}
+
+.pagination > li > a:hover {
+    color: #AB2680 ;
+}
+
+.pagination-div {
+    float: right;
+}
+
+.page-link {
+    cursor: pointer;
+}

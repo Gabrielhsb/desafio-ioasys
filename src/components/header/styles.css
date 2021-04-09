@@ -1,17 +1,19 @@
 .titulo > img {
     position: absolute;
+    position: absolute;
     left: 8.42%;
     right: 83.94%;
     top: 5.47%;
     bottom: 89.84%;
+    
 }
 
 .titulo > h1 {
     position: absolute;
-    width: 77px;
-    height: 40px;
-    left: 280px;
-    top: 48px;
+    left: 14.42%;
+    right: 83.94%;
+    top: 5.47%;
+    bottom: 89.84%;
 
     font-family: Heebo;
     font-style: normal;

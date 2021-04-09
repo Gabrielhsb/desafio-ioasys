@@ -3,8 +3,19 @@ import React from 'react';
 import "./styles.css";
 import logo from "./assets/logo.png";
 
+import { useSelector, useDispatch } from 'react-redux';
+import logoutService from '../../services/logout.service';
+
+
 
 export default function Header({user}) {
+    const { isAuthenticated } = useSelector((state) => state.auth);
+    const dispatch = useDispatch();
+    console.log(isAuthenticated);
+    function logout()  {
+        isAuthenticated && dispatch(logoutService());
+    }
+
     return(
         <div className="header">
             <div className="titulo">
@@ -13,7 +24,7 @@ export default function Header({user}) {
             </div>
             <div className="user">
                 <p>Bem vindo, {user.name}!</p>
-                <button>Logout</button>
+                <button onClick={logout}>Logout</button>
             </div>
         </div>
     )

@@ -15,7 +15,6 @@ export const authLogin = (user) => {
             body: JSON.stringify(user)
         }).then(res => {
             localStorage.setItem('token', res.headers.get('authorization'));
-            dispatch(login());
             window.location.pathname = '/home';
         })
             .catch(console.log);
@@ -25,7 +24,7 @@ export const authLogin = (user) => {
 export const getAllBooks = (access_token) => {
     return (dispatch) => {
         api
-            .get('/books?page=1&amount=12', {
+            .get('/books?page=1&amount=50', {
                 headers: {
                     'Authorization': `Bearer ${access_token}`
                 }
