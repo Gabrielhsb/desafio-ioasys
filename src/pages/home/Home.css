@@ -1,5 +1,4 @@
 body {
-
     background-image: url("./assets/Background-image.png");
     height: 900px;
     background-position:top;
@@ -7,7 +6,6 @@ body {
     background-size:cover;
     outline: none;
 }
-
 
 .space {
     border: 30px;
@@ -20,3 +18,14 @@ body {
 .container { 
     padding: 0px;
   }
+
+@media screen and (max-width: 480px)  {
+    .mobile {
+        left: 65px;
+    }
+    .body {
+        background-size: auto;
+        background-position: center;
+        
+    }
+}

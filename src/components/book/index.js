@@ -1,11 +1,8 @@
 import React from 'react';
-
 import "./styles.css";
-
 
 export default function Book({book}) {
     return(
-  
         <div className="page-card row">
             <div className="page-card-image ">
                 <img src={book.imageUrl} className="card-image-left" alt={book.title}/>
@@ -24,10 +21,8 @@ export default function Book({book}) {
                     <p><b>ISBN-10</b>{book.isbn10}</p>
                     <p><b>ISBN-13</b>{book.isbn13}</p>
                 </div>
-                   
                 </div>
             </div>
         </div>
-     
     );
 }

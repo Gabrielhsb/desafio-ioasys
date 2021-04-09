@@ -14,7 +14,6 @@
     right: 83.94%;
     top: 5.47%;
     bottom: 89.84%;
-
     font-family: Heebo;
     font-style: normal;
     font-weight: 300;
@@ -47,9 +46,25 @@
     right: 6.52%;
     top: 5.73%;
     bottom: 90.1%;
-
     border: 1px solid rgba(51, 51, 51, 0.2);
     box-sizing: border-box;
 }
 
+.user > button {
+    border-radius: 30px;
+    font-size: small;
+    font-family: Heebo, bold;
+}
 
+@media screen and (max-width: 480px)  {
+          
+    .titulo > h1 {
+        left: 150px;
+    }
+    .user > button {
+        left: 300px;
+    }
+    .user > p {
+        display: none;
+    }
+}

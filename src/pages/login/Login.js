@@ -7,14 +7,11 @@ import React, { useState, useEffect } from 'react';
 
 const Login = () => {
     const [form, setForm] = useState({ email: '', password: '' });
-    
     const dispatch = useDispatch();
     function changeForm(e) {
         const { name, value } = e.target
-
         setForm({ ...form, [name]: value })
     };
-
     function submitForm(e){
         e.preventDefault();
         setForm({email:'', password:''});
@@ -26,7 +23,6 @@ const Login = () => {
     }, []);
 
     return (
-      
             <div className="login_div">
                 <form 
                     onSubmit={submitForm}
@@ -43,8 +39,6 @@ const Login = () => {
        
     );
 
-
 }
-
 
 export default Login;

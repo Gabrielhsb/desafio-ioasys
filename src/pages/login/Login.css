@@ -1,24 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Heebo');
 
-
-
-
-
 .login_form > h1 {
     position: absolute;
     width: 77px;
     height: 40px;
     left: 236px;
     top: 272px;
-    
     font-family: Heebo;
     font-style: normal;
     font-weight: 300;
     font-size: 28px;
     line-height: 40px;
-    /* identical to box height, or 143% */
-    
-    
     color: #FFFFFF;
 }
 
@@ -28,10 +20,11 @@
     height: 50px;
     left: 115px;
     top: 360px;
-    
+    padding-left: 16px;
+    padding-top: 12px;
     background: rgba(0, 0, 0, 0.219);   
     border-radius: 4px;
-
+    color:#FFFFFF;
 }
 
 .email-label {
@@ -39,29 +32,28 @@
     width: 30px;
     height: 16px;
     left: 131px;
-    top: 368px;
-
+    top: 366px;
     font-family: Heebo;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
     line-height: 16px;
-
     color: #FFFFFF;
-
     opacity: 0.5;
     transition: 0.2s ease all;
 }
+
 .password {
     position: absolute;
     width: 368px;
     height: 50px;
     left: 115px;
     top: 436px;
-    
+    padding-left: 16px;
+    padding-top: 12px;    
     background: rgba(0, 0, 0, 0.219);
-    backdrop-filter: blur(2px);
     border-radius: 4px; 
+    color:#FFFFFF;
 }
 .password-label {
     position: absolute;
@@ -69,26 +61,20 @@
     height: 16px;
     left: 131px;
     top: 444px;
-    
     font-family: Heebo;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
     line-height: 16px;
-    /* identical to box height, or 133% */
-    
-    
     color: #FFFFFF;
-    
     opacity: 0.5;
 }
 .login_form > img {
     position: absolute;
     left: 120px;
     top: 292px;
-
-
 }
+
 .login-body {
     background-image: url("./assets/Background-image.png");
     height: 900px;
@@ -96,8 +82,6 @@
     background-repeat: no-repeat;
     background-size:cover;
     outline: none;
-
-
 }
 
 .submit_btn {
@@ -105,21 +89,14 @@
     width: 85px;
     height: 36px;
     left: 386px;
-    top: 446px;
-
+    top: 443px;
     background: #FFFFFF;
     border-radius: 44px;
     position: absolute;
-
-
     font-family: Heebo;
     font-style: normal;
     font-weight: 800;
-
     line-height: 20px;
-    /* identical to box height, or 125% */
-
-
     color: #B22E6F;
 }
 
@@ -128,7 +105,6 @@
     top: 290px;
     font-size: 35px;
 }
-
 
 @media screen and (max-width: 480px)  {
     .email {

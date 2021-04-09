@@ -1,15 +1,14 @@
 import React from 'react';
 import "./styles.css";
+
+
 const Pagination = ({ booksPerPage, totalBooks, paginate }) => {
     const pageNumbers = [];
 
     for(let i = 1; i <= Math.ceil(totalBooks/booksPerPage); i++){
         pageNumbers.push(i);
     }
-
-
     return (
-        
         <nav className="container">
             <div className="pagination-div">
                 <ul className="pagination">
@@ -26,5 +25,4 @@ const Pagination = ({ booksPerPage, totalBooks, paginate }) => {
         </nav>
     )
 }
-
 export default Pagination;

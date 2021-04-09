@@ -3,7 +3,6 @@ import { login } from '../ducks/auth';
 import { addBooks } from "../ducks/books"
 const baseUrl = "https://books.ioasys.com.br/api/v1/auth/sign-in"
 
-
 export const authLogin = (user) => {
     return (dispatch) => {
         fetch(baseUrl, {
@@ -14,8 +13,13 @@ export const authLogin = (user) => {
             },
             body: JSON.stringify(user)
         }).then(res => {
-            localStorage.setItem('token', res.headers.get('authorization'));
-            window.location.pathname = '/home';
+            const token = res.headers.get('authorization')
+            console.log(token);
+            if(token != null){
+                localStorage.setItem('token',token);
+                dispatch(login);
+                window.location.pathname = '/home';
+            }
         })
             .catch(console.log);
     }

@@ -1,11 +1,8 @@
 import React from 'react';
-
 import "./styles.css";
 import logo from "./assets/logo.png";
-
 import { useSelector, useDispatch } from 'react-redux';
 import logoutService from '../../services/logout.service';
-
 
 
 export default function Header({user}) {
@@ -15,7 +12,6 @@ export default function Header({user}) {
     function logout()  {
         isAuthenticated && dispatch(logoutService());
     }
-
     return(
         <div className="header">
             <div className="titulo">

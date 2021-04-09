@@ -9,7 +9,6 @@ import Pagination from "../../components/pagination";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
-
 export default function Home() {
 
 	const books = useSelector((state) => state.books);
@@ -17,32 +16,31 @@ export default function Home() {
 	const [loadin, setLoading] = useState(false);
 	const [currentPage, setCurrentPage] = useState(1);
 	const [booksPerPage] = useState(12);
-
-
 	const indexOfLastPost = currentPage * booksPerPage;
 	const indexOfFirstPost = indexOfLastPost - booksPerPage;
 	const currentBook = books.slice(indexOfFirstPost, indexOfLastPost);
-
 	const paginate = (pageNumber) => setCurrentPage(pageNumber);
+
+
+
 
 	useEffect(() => {
 		dispatch(getAllBooks(localStorage.getItem("token")));
+		setLoading(false);
 	}, [dispatch]);
 	
 	let user=  {
-		name: "Guilherme"
+		name: "Guilherme" //Usado para teste 
 	};
-
-
 
 	return (
 			<div class="rspace ">
 				<Header user={user}/>
 				<div class="row" >
 				<div className="container">
-						<div class="row">
+						<div class="row mobile">
 					
-							 {currentBook.map((book, index) => <div class="col-3 mb-3 "><Card key={index} book={book} loading={loadin} /></div>)}
+							 {currentBook.map((book, index) => <div class="col-xl-3 mb-3 mobile"><Card key={index} book={book} loading={loadin} /></div>)}
 							<Pagination booksPerPage={booksPerPage} totalBooks={books.length} paginate={paginate}/> 
 						</div>
 				</div>

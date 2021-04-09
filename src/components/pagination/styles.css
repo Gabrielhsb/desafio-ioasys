@@ -3,7 +3,6 @@
 
 .pagination > li > a {
     color:black;
-
 }
 
 .pagination > li > a:hover {
@@ -16,4 +15,13 @@
 
 .page-link {
     cursor: pointer;
+}
+
+@media screen and (max-width: 480px)  {
+    
+    .pagination-div{
+        width: 50%;
+        margin: 0 80px;
+        
+    }
 }
